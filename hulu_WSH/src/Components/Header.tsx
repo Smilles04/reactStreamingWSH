@@ -3,7 +3,7 @@ import logo from '../assets/Images/logo.png'
 import {IoChevronDown, IoChevronDownOutline, IoChevronUp, IoChevronUpOutline, IoSearch} from "react-icons/io5";
 
 function Header() {
-    const [toggle,setToggle]=useState(false);
+    const [toggle,setToggle]=useState(true);
     const menu=[
             {
                 id:1,
@@ -42,7 +42,7 @@ function Header() {
                 rounded-md transition-all duration-500 ease-in-out '>{item.name}</li>
             ))}
         </ul>
-        <div className='md:hidden'>
+        <div className='md:hidden absolute '>
             <h2 className='text-white font-medium flex items-center gap-2 px-3 py-2 pb-2 
             bg-gray-700 rounded-md cursor-pointer'>Home {!toggle? <IoChevronDownOutline className='mt-1'/>:
             <IoChevronUpOutline className='mt-1' />}
