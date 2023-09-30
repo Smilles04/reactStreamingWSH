@@ -12,7 +12,7 @@ function GenereMovieList() {
                 <h2 className='text-white text-[20px] font-bold  '>{item.name}
                 <span className='font-normal text-[16px] cursor-pointer text-gray-400
                 float-right flex'>VIEW ALL <IoChevronForwardSharp classname='text-white ml-1'/></span></h2>
-                <MovieList genreId={}/>
+                <MovieList genreId={item.id}/>
             </div>
         ))}
     </div>
