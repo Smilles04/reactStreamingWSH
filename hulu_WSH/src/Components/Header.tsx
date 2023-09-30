@@ -44,7 +44,8 @@ function Header() {
         </ul>
         <div className='md:hidden absolute '>
             <h2 className='text-white font-medium flex items-center gap-2 px-3 py-2 pb-2 
-            bg-gray-700 rounded-md cursor-pointer'>Home {!toggle? <IoChevronDownOutline className='mt-1'/>:
+            bg-gray-700 rounded-md cursor-pointer'
+            onClick={()=> setToggle(!toggle)}>Home {!toggle? <IoChevronDownOutline className='mt-1'/>:
             <IoChevronUpOutline className='mt-1' />}
             </h2>
             {toggle?
