@@ -32,10 +32,12 @@ function Header() {
   return (
     <div>
         <img src={logo} className="w-[65px]"/>
-        <ul>
+        <ul className='flex'>
             {menu.map((item)=>(
                 <li className='text-gray-400 text-[18px]
-                font-medium cursor-pointer'>{item.name}</li>
+                font-medium cursor-pointer hover:bg-gray-700
+                hover:text-white px-3 pb-2 py-1
+                rounded-md transition-all duration-500 ease-in-out '>{item.name}</li>
             ))}
         </ul>
 
