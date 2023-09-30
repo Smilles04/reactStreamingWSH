@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import GenreMovieList from '../Components/GenereMovieList'
-import MovieCard from '../Components/MovieCard'
+
 
 function Home() {
   return (
@@ -12,10 +12,6 @@ function Home() {
         <Hero/>
 
         <GenreMovieList/>
-
-        <MovieCard/>
-
-
     </div>
   )
 }
