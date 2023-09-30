@@ -9,6 +9,6 @@ const getPopularMovies=axios.get(movieBaseURL+"/popular?api_key="+api_key)
 const getMovieByGenreId=(id:number)=>axios.get(movieByGenreBaseURL+"&with_genres="+id)
 
 export default{
-    getPopularMovies
+    getPopularMovies,
     getMovieByGenreId
 }

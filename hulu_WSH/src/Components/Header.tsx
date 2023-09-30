@@ -3,7 +3,7 @@ import logo from '../assets/Images/logo.png'
 import {IoChevronDown, IoChevronDownOutline, IoChevronUp, IoChevronUpOutline, IoSearch} from "react-icons/io5";
 
 function Header() {
-    const [toggle,setToggle]=useState(true);
+    const [toggle,setToggle]=useState(false);
     const menu=[
             {
                 id:1,
