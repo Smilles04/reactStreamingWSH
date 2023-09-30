@@ -31,7 +31,7 @@ function Header() {
     ]
 
   return (
-    <div className='flex'>
+    <div className='flex justify-between items-center p-4 px-10' >
         <img src={logo} className="w-[65px]"/>
         <ul className='flex gap-8'>
             {menu.map((item)=>(
@@ -41,10 +41,11 @@ function Header() {
                 rounded-md transition-all duration-500 ease-in-out '>{item.name}</li>
             ))}
         </ul>
-        <div>
+        <div className='flex gap-10'>
             <IoSearch className='text-[35px] text-gray-300
-            hover:bg-gray-700 px-[3px] pb-[2px] py-[2px]
+            hover:bg-gray-700 px-[3px] pb-[2px] py-[2px] cursor-pointer
             rounded-md hover:text-white transition-all duration-500 ease-in-out'/>
+            <h2 className='px-[10px] text-[20px] text-gray-300 border-[2px] border-white rounded-full'>R</h2>
         </div>
 
 
