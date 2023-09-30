@@ -2,7 +2,7 @@ import React from 'react'
 
 function s() {
   return (
-    <div>s</div>
+    <div>header</div>
   )
 }
 
